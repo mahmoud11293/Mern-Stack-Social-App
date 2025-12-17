@@ -14,7 +14,11 @@ import {
 import { Request, Response } from 'express';
 import { ZodValidationPipe } from 'src/Pipes/validation.pipe';
 import { UserService } from './user.service';
-import { changePasswordSchema, signinSchema, signupSchema } from './user.validationSchema';
+import {
+  changePasswordSchema,
+  signinSchema,
+  signupSchema,
+} from './user.validationSchema';
 import { ChangePasswordDto, SignInDto, SignUpDto } from './dto';
 import {
   ChangePasswordResponse,
@@ -25,7 +29,7 @@ import {
 } from './interfaces';
 import { AuthGuard } from '../Guards';
 import { imageFileInterceptor } from '../common/cloudinary/FileInterceptor';
-import { GetPostsResponseInterface } from '../post/interfaces';
+import { GetPostsResponseInterface } from '../Post/interfaces';
 
 @Controller('user')
 export class UserController {

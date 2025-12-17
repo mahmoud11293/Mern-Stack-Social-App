@@ -20,7 +20,7 @@ import { Request } from 'express';
 import { nanoid } from 'nanoid';
 import { CloudinaryService } from '../common/cloudinary/cloudinary.service';
 import { UploadApiResponse } from 'cloudinary';
-import { GetPostsResponseInterface } from '../post/interfaces';
+import { GetPostsResponseInterface } from '../Post/interfaces';
 
 @Injectable()
 export class UserService {
